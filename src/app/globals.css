@@ -1,5 +1,10 @@
 body {
   font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
 }
 
 .pagination {
@@ -7,18 +12,46 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
 
-  button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    background-color: #0070f3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    &:disabled {
-      background-color: #ccc;
-      cursor: not-allowed;
-    }
-  }
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.table-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 20px;
 }
